@@ -1,0 +1,349 @@
+body {
+    display: grid;
+    flex-wrap: wrap;
+    border: 0px solid black;
+    background-color: white;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    border: 0px solid black;
+
+}
+
+header nav.logo {
+
+    display: flex;
+    margin: 0;
+    border: 0px;
+    align-items: center;
+}
+
+footer {
+    padding: 50px;
+    color: grey
+}
+
+footer p {
+    color: white;
+
+}
+
+header>a {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+ul.menu {
+    display: flex;
+    border: 0px solid black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+
+
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    border: 0px solid black;
+    padding: 0px;
+    background-color: none;
+    border-radius: 3em;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+
+
+}
+
+
+ul.menu li a {
+
+    font-size: 25px;
+    font-family: helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menu a:hover {
+    color: pink;
+    transition: 0.9s;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    text-align: center;
+    margin: 5px;
+}
+
+.container li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: purple;
+    margin: 7px;
+}
+
+
+.container {
+    display: grid;
+    border: 0px solid black;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: white;
+    border-radius: 0em;
+    opacity: 0, 0;
+}
+
+.container2 {
+    display: grid;
+    border: 0px solid purple;
+    width: 100%;
+    padding: 20px;
+    border-radius: 13em;
+    background-color: black;
+}
+
+.container3 {
+    display: grid;
+    padding: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+    border: 0px solid black;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ik heb hier 'grid' inplaats van 'Flex' gebruikt omdat 
+ik alles onder elkaar wilde hebben en niet naast elkaar*/
+
+ul li {
+    display: grid;
+    border: 0px solid black;
+    font-size: 18px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.logo {
+    display: flex;
+    border: 0px solid black;
+
+    padding: 0px;
+    width: 400px;
+    height: 300px;
+    animation: roll 50s infinite;
+    transform: rotate(360deg);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.bronnen {
+    max-width: 600px;
+    border: 0px solid black;
+    margin: auto;
+
+}
+
+/* Bij de header heb ik geleerd hoe je een block moest gebruiken, na honderden
+codes te hebben ingevuld is dit de code die mijn tekst niet buiten het blok
+van mijn kollom bracht. Hier bedacht ik me dat ik nog geen style had gemaakt
+vor de link in mijn kollom, vandaar de .bronnen a{ */
+
+.bronnen a,
+.bronnen li,
+.bronnen p {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    border: 0px solid black;
+
+}
+
+a {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* Deze wordt alleen gebruikt voor banner "titels" */
+
+
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Deze wordt alleen gebruikt voor banner "slogans" */
+
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Deze wordt alleen gebruikt voor "quotes" */
+
+h3 {
+    font-size: 20px;
+    font-family: wanding, sans-serif;
+    color: purple;
+    text-align: center;
+}
+
+/* Allle kopteksten in de body */
+
+h4 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Ik heb hier een class gemaakt omdat ik mijn content wilde laten meebewegen met de pagina */
+
+.content {
+    display: grid;
+    border: 0px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+}
+
+.section {
+    display: flex;
+}
+
+video {
+
+    width: 250px;
+    opacity: 80%;
+
+}
+
+.section video {
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* Omdat mijn andere video ook full size werd heb 
+ik de header video een class gegeven zodat alleen deze full-size wordt */
+.header-video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Deze code heb ik opgezocht omdat ik graag mijn tekst in mijn video header wilde hebben.
+ook heb ik de code van de video header opgezocht omdat ik de video in de header wilde hebben staan
+en in een bepaald formaat. Ik heb hierbij geleerd dat om een video (of een ander item) 
+in de header full size, afsnijdend in een block wil hebben "display: block" moet gebruiken.*/
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Ik had eerst alleen deze code maar mijn video's stonden nog steeds helemaal rechts gecentreerd, 
+ik snapte niet waarom. Toen bedacht ik me dat die video's in een container staan, dus waarschijnlijk
+moet ik deze een "class" geven om het groter te maken zodat deze de grootte van de site krijgt en 
+aanfezien de elementen in een flex-box staan passen deze zich aan aan de container van de flex-box */
+
+.video-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    animation: verschijn 6s ease;
+}
+
+@keyframes verschijn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.blok1 {
+    display: flex;
+    padding: 100px;
+}
+
+.blok1 img {
+    width: 50%;
+    border-radius: 0 0 0 3em;
+}
+
+.tekst {
+    flex: 1;
+    border: 0px solid black;
+    background-color: white;
+    border-radius: 0 0 3em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
